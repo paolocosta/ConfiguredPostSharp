@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConfiguredPostSharp.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace ConfiguredPostSharp
     {
         static void Main(string[] args)
         {
+            new Class1().Test<string>("drtdrtd",3);
         }
+
+        
     }
 }
