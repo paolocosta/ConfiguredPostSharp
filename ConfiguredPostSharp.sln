@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguredPostSharp", "ConfiguredPostSharp\ConfiguredPostSharp.csproj", "{E74747EA-55C3-4692-A866-81F6F76F2E94}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B95817E8-F137-438B-8578-823749016347}"
 	ProjectSection(SolutionItems) = preProject
 		ConfiguredPostSharp.pssln = ConfiguredPostSharp.pssln
@@ -24,16 +22,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebImplementation", "WebImplementation\WebImplementation.csproj", "{71D57FE5-FC3D-49FD-890A-5D445CF01D2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B442E7B5-F562-4AA4-B2EE-7D5F3BC7B2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguredPostSharp.Web", "ConfiguredPostSharp.Web\ConfiguredPostSharp.Web.csproj", "{BA41B28C-1F05-4689-8968-46C7CBFD3C35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguredPostSharp.Web.Tests", "ConfiguredPostSharp.Web.Tests\ConfiguredPostSharp.Web.Tests.csproj", "{5B883843-29E6-4C77-BEDD-CB06141918F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostSharpConfiguration", "PostSharpConfiguration", "{E7C06661-0917-46B6-A754-83A413012B5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E74747EA-55C3-4692-A866-81F6F76F2E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E74747EA-55C3-4692-A866-81F6F76F2E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E74747EA-55C3-4692-A866-81F6F76F2E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E74747EA-55C3-4692-A866-81F6F76F2E94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D644DDF2-4237-43A7-A22D-84166DEBAAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D644DDF2-4237-43A7-A22D-84166DEBAAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D644DDF2-4237-43A7-A22D-84166DEBAAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -54,14 +56,25 @@ Global
 		{71D57FE5-FC3D-49FD-890A-5D445CF01D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71D57FE5-FC3D-49FD-890A-5D445CF01D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71D57FE5-FC3D-49FD-890A-5D445CF01D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA41B28C-1F05-4689-8968-46C7CBFD3C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA41B28C-1F05-4689-8968-46C7CBFD3C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA41B28C-1F05-4689-8968-46C7CBFD3C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA41B28C-1F05-4689-8968-46C7CBFD3C35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B883843-29E6-4C77-BEDD-CB06141918F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B883843-29E6-4C77-BEDD-CB06141918F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B883843-29E6-4C77-BEDD-CB06141918F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B883843-29E6-4C77-BEDD-CB06141918F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{D644DDF2-4237-43A7-A22D-84166DEBAAEE} = {E7C06661-0917-46B6-A754-83A413012B5F}
 		{7CB93E76-9F5F-4673-B294-C6D8A4D9B914} = {6D4BC4E0-8EBF-4195-9F92-E8E5031FB2FA}
 		{7963D8C3-E52F-46C9-AF9C-A882F9191AF5} = {6D4BC4E0-8EBF-4195-9F92-E8E5031FB2FA}
 		{2A96398A-D154-4E78-B782-E3664358548F} = {6D4BC4E0-8EBF-4195-9F92-E8E5031FB2FA}
 		{71D57FE5-FC3D-49FD-890A-5D445CF01D2A} = {ADA3F708-BB6D-43F5-995D-5A09B1A3C989}
+		{BA41B28C-1F05-4689-8968-46C7CBFD3C35} = {B442E7B5-F562-4AA4-B2EE-7D5F3BC7B2BD}
+		{5B883843-29E6-4C77-BEDD-CB06141918F4} = {B442E7B5-F562-4AA4-B2EE-7D5F3BC7B2BD}
 	EndGlobalSection
 EndGlobal

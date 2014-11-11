@@ -11,7 +11,7 @@ namespace WebImplementation
     {
         public void Insert(string CacheKey, object Value, int Duration)
         {
-            throw new NotImplementedException();
+            System.Web.HttpContext.Current.Cache.Insert(CacheKey, Value, null, DateTime.Now.AddSeconds(Duration), System.Web.Caching.Cache.NoSlidingExpiration);
         }
 
         public void Clear()
@@ -21,7 +21,7 @@ namespace WebImplementation
 
         public object GetValue(string CacheKey)
         {
-            throw new NotImplementedException();
+            return System.Web.HttpContext.Current.Cache.Get(CacheKey);
         }
     }
 }
