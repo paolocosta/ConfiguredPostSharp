@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NinjectResolver
+namespace WebImplementation
 {
-    public class CacheProvider : ICacheProvider
+    public class CacheProvider:ICacheProvider
     {
         public void Insert(string CacheKey, object Value, int Duration)
         {

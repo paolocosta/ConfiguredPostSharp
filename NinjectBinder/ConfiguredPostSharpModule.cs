@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebImplementation;
 
-namespace NinjectResolver
+namespace NinjectBinder
 {
     public class ConfiguredPostSharpModule : NinjectModule
     {
@@ -15,10 +16,7 @@ namespace NinjectResolver
             Bind<ICacheProvider>().To<CacheProvider>();
         }
 
-        public static T Get<T>()
-        { 
-            return 
-        }
-    
+
+
     }
 }
