@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E74747EA-55C3-4692-A866-81F6F76F2E94}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{7CB93E76-9F5F-4673-B294-C6D8A4D9B914}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConfiguredPostSharp</RootNamespace>
-    <AssemblyName>ConfiguredPostSharp</AssemblyName>
+    <RootNamespace>NinjectResolver</RootNamespace>
+    <AssemblyName>NinjectResolver</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <DontImportPostSharp>True</DontImportPostSharp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,9 +38,6 @@
       <Private>True</Private>
       <HintPath>..\packages\PostSharp.4.0.35\lib\net35-client\PostSharp.dll</HintPath>
     </Reference>
-    <Reference Include="PostSharp.Patterns.Diagnostics">
-      <HintPath>..\packages\PostSharp.Patterns.Diagnostics.4.0.35\lib\net40\PostSharp.Patterns.Diagnostics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,23 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlobalAspects.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CacheProvider.cs" />
+    <Compile Include="ConfiguredPostSharpModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="ConfiguredPostSharp.psproj" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConfiguredPostSharp.Configuration\ConfiguredPostSharp.Configuration.csproj">
       <Project>{d644ddf2-4237-43a7-a22d-84166debaaee}</Project>
       <Name>ConfiguredPostSharp.Configuration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NinjectResolver\NinjectResolver.csproj">
-      <Project>{7cb93e76-9f5f-4673-b294-c6d8a4d9b914}</Project>
-      <Name>NinjectResolver</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
