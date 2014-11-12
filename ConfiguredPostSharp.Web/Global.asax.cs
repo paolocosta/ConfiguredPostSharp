@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
+
 namespace ConfiguredPostSharp.Web
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -14,8 +15,12 @@ namespace ConfiguredPostSharp.Web
 
     public class WebApiApplication : System.Web.HttpApplication
     {
+        private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(typeof(WebApiApplication));
+    
         protected void Application_Start()
         {
+
+            Log.Info("Application started");
             NinjectKernel.KernelFactory.Kernel.Load(AppDomain.CurrentDomain.GetAssemblies());
             AreaRegistration.RegisterAllAreas();
 

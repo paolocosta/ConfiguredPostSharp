@@ -123,6 +123,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ConfiguredPostSharp.Web.Tests.psproj" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,6 @@
-﻿using ConfiguredPostSharp.Configuration.Providers;
+﻿
 using Ninject.Modules;
+using Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace NinjectBinder
         public override void Load()
         {
             Bind<ICacheProvider>().To<CacheProvider>();
+            Bind<IContext>().To<Context>();
         }
 
 

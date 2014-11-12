@@ -8,9 +8,8 @@ namespace ConfiguredPostSharp.Configuration
 {
     public class Class1
     {
-        [Exception]
         [MethodBoundary]
-        public string Test<T>(string p1, int p2)
+        public string Test(string p1, int p2)
         {
             return 1.ToString();
         }
