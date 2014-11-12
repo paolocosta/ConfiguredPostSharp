@@ -11,7 +11,9 @@ namespace ConfiguredPostSharp.Web.Controllers
     {
         public ActionResult Index()
         {
-            new Class1().Test("232",2);
+            ViewBag.Now = new TestClass().GetNow();
+            new TestClass().VoidCall();
+            new TestClass().WriteMethod();
             return View();
         }
     }
