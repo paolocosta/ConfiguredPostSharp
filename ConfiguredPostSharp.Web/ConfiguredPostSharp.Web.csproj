@@ -301,17 +301,9 @@
       <Project>{d644ddf2-4237-43a7-a22d-84166debaaee}</Project>
       <Name>ConfiguredPostSharp.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NinjectBinder\NinjectBinder.csproj">
-      <Project>{7963d8c3-e52f-46c9-af9c-a882f9191af5}</Project>
-      <Name>NinjectBinder</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NinjectKernel\NinjectKernel.csproj">
       <Project>{2a96398a-d154-4e78-b782-e3664358548f}</Project>
       <Name>NinjectKernel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NinjectResolver\NinjectResolver.csproj">
-      <Project>{7cb93e76-9f5f-4673-b294-c6d8a4d9b914}</Project>
-      <Name>NinjectResolver</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebImplementation\WebImplementation.csproj">
       <Project>{71d57fe5-fc3d-49fd-890a-5d445cf01d2a}</Project>
